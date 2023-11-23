@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 // imoprt twiterImage from '../Image/twiterImage.jpg';
 import twiterImage from "../Image/twitter.jpeg";
 import auth from "../../../firebase.init";
-// import TwitterIcon from '@mui/icons-material/Twitter';
+import TwitterIcon from "@mui/icons-material/Twitter";
 // import TwitterIcon from "@mui/icons-material/Twitter";
-import  {usesignInWithEmailAndPassword} from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,26 +15,39 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email,password);
-   
-
-  };
-  const [
-    signInWithEmailAndPassword,
-    user,
-    loading,
-    error,
-  ] = usesignInWithEmailAndPassword(auth);
+    console.log(email, password);
+    signInWithEmailAndPassword(email, password)}
+  
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+  console.log(user);
+  if (error) {
+    return (
+      <div>
+        <p>Error: {error.message}</p>
+      </div>
+    );
+  }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  if (user) {
+    return (
+      <div>
+        <p>Signed In User: {user.email}</p>
+      </div>
+    );
+  }
 
   return (
     <>
       <div className="login-container">
         <div image-container>
-          <img className="image" src={twiterImage} alr="Twiter Iamge"></img>
+          <img className="image" src={twiterImage} alt="Twiter Iamge"></img>
         </div>
         <div className="form-container">
           <div className="form-box">
-            {/* <TwitterIcon></TwitterIcon> */}
+            <TwitterIcon></TwitterIcon>
 
             <h2 className="heading">Happening Now</h2>
             <form onSubmit={handleSubmit}>
@@ -57,7 +71,11 @@ const Login = () => {
             <hr></hr>
           </div>
           <div> Goole Button</div>
-          <div>Dont Have Account</div>
+          <div>
+            Dont Have Account
+            <Link to="/signup">Sign Up</Link>
+          
+          </div>
         </div>
       </div>
     </>
