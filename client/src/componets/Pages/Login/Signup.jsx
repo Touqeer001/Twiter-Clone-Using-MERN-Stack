@@ -31,7 +31,7 @@ const Signup = () => {
     signInWithGoogle();
   };
 
-  //   const [signInWithEmailAndPassword, user, loading, error] =
+  //  const [signInWithEmailAndPassword, user, loading, error] =
   //     useSignInWithEmailAndPassword(auth);
   //   console.log(user);
 
