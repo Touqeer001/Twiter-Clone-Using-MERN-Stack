@@ -14,6 +14,7 @@ const firebaseConfig = {
   storageBucket: "twiter-clone-c0d20.appspot.com",
   messagingSenderId: "891518998974",
   appId: "1:891518998974:web:4937919aa5c2964823c1ef",
+
   measurementId: "G-V1YL8XZXHE",
 };
 
