@@ -60,7 +60,7 @@ const Login = () => {
           <div className="form-box">
             <TwitterIcon className="Twitter-img"></TwitterIcon>
 
-            <h1 className="heading-1">Happening Now</h1>
+            <h1 className="heading-1">Happening Now.</h1>
             <form onSubmit={handleSubmit}>
               <input
                 className="email"
