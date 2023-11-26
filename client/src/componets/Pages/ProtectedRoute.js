@@ -6,7 +6,7 @@ import { Navigate } from 'react-router-dom';
 const ProtectedRoute = ({children}) => {
     const[user,isLoading]=useAuthState(auth);
     if(!user){
-        return <Navigate ></Navigate>
+        return <Navigate></Navigate>
     }
 
   return (
