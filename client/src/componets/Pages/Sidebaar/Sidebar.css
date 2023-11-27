@@ -28,6 +28,46 @@
     text-transform: inherit !important;
     border-radius: 30px !important;
     height: 50px !important;
+
     margin-top: 10px !important;
   }
   
+  .sidebar>.Profile__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 40px; */
+    margin-bottom: 10px;
+    border-radius: 9999px;
+    padding: 10px;
+  }
+  
+  .user__info {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  
+  .subUser__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .user__info>h4 {
+    font-size: 14px;
+
+    
+  }
+  
+  .user__info>h5 {
+    opacity: 50%;
+    margin-top: -12px;
+    
+  }
+  
+  @media screen and (max-width:688px) {
+    .sidebar {
+      display: none;
+    }
+  }
