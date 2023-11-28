@@ -1,7 +1,11 @@
 import React from "react";
+import "../Page.css"
 
 const Bookmarks = () => {
-  return <div><h1>This is BookMarks Pgee</h1></div>;
+  return <div className="page">
+  <h2 className="pageTitle">Welcome to Bookmrks Page</h2>
+
+</div>
 };
 
 export default Bookmarks;
