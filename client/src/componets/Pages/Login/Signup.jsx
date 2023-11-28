@@ -11,6 +11,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import GoogleButton from "react-google-button";
 import "./style.css";
+import axios from "axios";
 
 const Signup = () => {
   const [username, setUsername] = useState();
@@ -25,6 +26,14 @@ const Signup = () => {
     e.preventDefault();
     console.log(username, name, email, password);
     createUserWithEmailAndPassword(email, password);
+
+    const user={
+      username:username,
+      name:name,
+      email:email,
+    }
+    const data=axios.post('http://localhost:5000/register',user)
+    console.log(data);
   };
 
   const handleLogin = () => {
