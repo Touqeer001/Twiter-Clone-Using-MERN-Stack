@@ -1,13 +1,14 @@
 import React from "react";
-import "../Page.css"
+import "./Feed.css";
+import TwiterBox from "./TwiterBox/TwiterBox";
 
 const Feed = () => {
   return (
-    
-    
-    <div className="page">
-        <h2 className="pageTitle">Welcome to Feed Page</h2>
-
+    <div className="feed">
+      <div className="feed__header">
+        <h2 id="heading-2">Home</h2>
+      </div>
+      <TwiterBox></TwiterBox>
     </div>
   );
 };
