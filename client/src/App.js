@@ -12,6 +12,7 @@ import Bookmarks from "./componets/Pages/Bookmarks/Bookmarks";
 import List from "./componets/Pages/List/List";
 import Profile from "./componets/Pages/Profile/Profile";
 import More from "./componets/Pages/More/More";
+import Message from "./componets/Pages/Message/Message";
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
                 <Home></Home>
               </ProtectedRoute>
             }
-          ></Route>
+          >
+            
+            <Route index element={<Feed />} />
+          </Route>
           <Route
             path="/home"
             element={
@@ -34,9 +38,11 @@ function App() {
               </ProtectedRoute>
             }
           >
-            {/* <Route path="feed" element={<Feed />}></Route> */}
+            <Route path="feed" element={<Feed />}></Route>
             <Route path="explore" element={<Explore />}></Route>
             <Route path="notification" element={<Notification />}></Route>
+            <Route path="message" element={<Message></Message>}></Route>
+
             <Route path="bookmarks" element={<Bookmarks />}></Route>
             <Route path="list" element={<List />}></Route>
             <Route path="profile" element={<Profile />}></Route>
@@ -44,7 +50,7 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup></Signup>}></Route>
-        <Route
+          <Route
             path="/loading-page"
             element={<PageLoading></PageLoading>}
           ></Route>
