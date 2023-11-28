@@ -1,8 +1,13 @@
 import React from 'react'
+import "../Page.css";
 
 const Notification = () => {
   return (
-    <div>Notification</div>
+    
+      <div className="page">
+      <h2 className="pageTitle">Welcome to More Page</h2>
+    </div>
+      
   )
 }
 
