@@ -19,6 +19,8 @@ import MenuItem from "@mui/material/MenuItem";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import DoneIcon from '@mui/icons-material/Done';
 import Divider from '@mui/material/Divider';
+
+import CustomeLink from "./CustomeLink";
 const Sidebar = ({handleLogout, user}) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const openMenu = Boolean(anchorEl);
@@ -33,18 +35,27 @@ const Sidebar = ({handleLogout, user}) => {
   return (
     <div className="sidebar">
       <TwitterIcon className="sidebar__twitterIcon"></TwitterIcon>
-      <SidebarOption active={true} text="Home" Icon={HomeIcon} />
-      <SidebarOption active={true} text=" Search" Icon={SearchIcon} />
+      <CustomeLink to="/home/feed">
+      <SidebarOption active={true} text="Home" Icon={HomeIcon} /></CustomeLink>
+      <CustomeLink to="/home/explore">
+      <SidebarOption active={true} text=" Explore" Icon={SearchIcon} /></CustomeLink>
+      <CustomeLink to="/home/notification">
       <SidebarOption
         active={true}
         text=" Notifications "
         Icon={NotificationsNoneIcon}
-      />
-      <SidebarOption active={true} text=" Mail " Icon={MailOutlineIcon} />
-      <SidebarOption active={true} text="Bookmark " Icon={BookmarkBorderIcon} />
-      <SidebarOption active={true} text="List " Icon={ListAltIcon} />
-      <SidebarOption active={true} text=" Perm " Icon={PermIdentityIcon} />
-      <SidebarOption active={true} text=" More  " Icon={MoreIcon} />
+      /></CustomeLink>
+      <CustomeLink to="/home/message">
+      <SidebarOption active={true} text=" Message " Icon={MailOutlineIcon} /></CustomeLink>
+      <CustomeLink to="/home/bookmarks">
+      <SidebarOption active={true} text="Bookmarks " Icon={BookmarkBorderIcon} /></CustomeLink>
+      <CustomeLink to="/home/list">
+      <SidebarOption active={true} text="List " Icon={ListAltIcon} /></CustomeLink>
+      <CustomeLink to="/home/profile">
+      <SidebarOption active={true} text=" Profile " Icon={PermIdentityIcon} /></CustomeLink>
+      <CustomeLink to="/home/more">
+      <SidebarOption active={true} text=" More  " Icon={MoreIcon} /></CustomeLink>
+      
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
