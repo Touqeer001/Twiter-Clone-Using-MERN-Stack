@@ -8,6 +8,7 @@ import { signOut } from "firebase/auth";
 import { Outlet } from "react-router-dom";
 
 const Home = () => {
+  
   const user=useAuthState(auth);
   const handleLogout = () => {
     signOut(auth);
