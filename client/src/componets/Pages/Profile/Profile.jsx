@@ -6,12 +6,7 @@ import auth from "../../../firebase.init";
 
 const Profile = () => {
   const { user } = useAuthState(auth);
-  return (
-    <div className="profilePage">
-      <MainProfile user={user}></MainProfile>
-
-    </div>
-  );
+  return <MainProfile user={user}></MainProfile>;
 };
 
 export default Profile;
