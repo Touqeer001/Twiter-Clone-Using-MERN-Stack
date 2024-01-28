@@ -1,4 +1,4 @@
-<h1 align="center">Flipkart Clone Using Mern Stack</h1> 
+<h1 align="center">Twitter-Clone Using Mern Stack</h1> 
 
 <h2 align="center">It's a MERN Stack E-commerce web application with all the major functionalities</h2>
 
