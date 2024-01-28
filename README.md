@@ -61,8 +61,7 @@ A Twitter clone is a web application or platform that emulates the functionality
   </tr>
   <tr>
  <td><img src="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/f8d87bfd-132e-4986-a510-e6ae97f3695c" alt="products" /></td>
- <td><img src="(https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/assets/126690073/97a6b482-bac9-4767-b9f6-7d49f4a09976)
-" alt="Profile Section" /></td>
+ <td><img src="(https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/assets/126690073/97a6b482-bac9-4767-b9f6-7d49f4a09976)" alt="Profile Section" /></td>
   </tr>
   <tr>
 <td><img src="(https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/assets/126690073/d8923717-f83e-4f87-bdb7-48492058e0ef)" alt="Profile" /></td>
