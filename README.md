@@ -14,37 +14,29 @@
      <img src="https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt="Firebase" />
 </p>
 
-<h3 align="center"><a href="https://swipekart.000webhostapp.com"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://twitter-cloness.netlify.app"><strong>Want to see live preview »</strong></a></h3>
 
 <p align="center"> 
     <br />&#10023;
     <a href="#Demo">View Demo</a>   &#10023;  
-    <a href="https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/issues">Report Bug</a> &#10023;
+    <a href="https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/issues">Report Bug</a> &#10023;
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;    
     <a href="#Contact">Author</a> &#10023;
   </p>
   
-Flipkart is an e-commerce web application that allows you topurchase products online. It has a variety of categories, just visit the product listing page and you will see all the products, apply search as per your need and in just a few clicks you can buy any products from the website.
+A Twitter clone is a web application or platform that emulates the functionality and features of Twitter, a popular social media platform. Twitter is known for its microblogging service, allowing users to share short messages called "tweets" with their followers. A Twitter clone aims to replicate this concept while often adding its own unique features or modifications.
   
- ![cover](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
+ ![cover](https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
 
 
   
   <br />
   
-  ## Screens ( All screens are responsive along with Dark Mode)
-   - Homepage
-   - Product Listing.
-   - Product Description Page
-   - Cart Management
-   - Login / Logout
-   - Signup
-   -Addd To Cart Page
-   -Payment 
 
 
 
- ![cover](https://github.com/Touqeer001/E-Commerce-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
+
+ ![cover](https://github.com/Touqeer001/Twiter-Clone-Using-MERN-Stack/assets/126690073/8fca9388-e212-4047-99cb-b4a17afd54c6)
 
 
 <br />
@@ -52,13 +44,9 @@ Flipkart is an e-commerce web application that allows you topurchase products on
 
 ## 🚀 Features
 - Login/Signup User Account
-- Product search
-- Add/Remove Items
-- Cart Add/Remove Items
-- Cart Update Quantities
-- product discription detail
-- payment gatway
-  
+- user can post 
+- Profile Edit
+
 
 
 <br />
@@ -99,7 +87,7 @@ Flipkart is an e-commerce web application that allows you topurchase products on
 
 ## Getting Started
 
-This project was built using React v 17.0.2, Redux v 4.1.1, Material UI, CSS, JavaScript, Rest API, Node JS, Express and MongoDBand jwt token. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
+This project was built using React v 17.0.2, CSS, JavaScript, Rest API, Node JS, Express and MongoDBand and Firebase. It is an Twitter Clone web application and for running on your local environment you should follow these guidelines.
 
 
 ### Prerequisites
